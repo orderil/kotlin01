@@ -1,0 +1,40 @@
+:dependencies
+
+------------------------------------------------------------
+Root project
+------------------------------------------------------------
+
+archives - Configuration for archive artifacts.
+No dependencies
+
+compile - Compile classpath for source set 'main'.
+\--- org.jetbrains.kotlin:kotlin-stdlib:1.0.6
+     \--- org.jetbrains.kotlin:kotlin-runtime:1.0.6
+
+default - Configuration for default artifacts.
+\--- org.jetbrains.kotlin:kotlin-stdlib:1.0.6
+     \--- org.jetbrains.kotlin:kotlin-runtime:1.0.6
+
+kapt
+\--- org.jetbrains.kotlin:kotlin-annotation-processing:1.0.6
+     \--- org.jetbrains.kotlin:kotlin-stdlib:1.0.6
+          \--- org.jetbrains.kotlin:kotlin-runtime:1.0.6
+
+kaptTest
+No dependencies
+
+runtime - Runtime classpath for source set 'main'.
+\--- org.jetbrains.kotlin:kotlin-stdlib:1.0.6
+     \--- org.jetbrains.kotlin:kotlin-runtime:1.0.6
+
+testCompile - Compile classpath for source set 'test'.
+\--- org.jetbrains.kotlin:kotlin-stdlib:1.0.6
+     \--- org.jetbrains.kotlin:kotlin-runtime:1.0.6
+
+testRuntime - Runtime classpath for source set 'test'.
+\--- org.jetbrains.kotlin:kotlin-stdlib:1.0.6
+     \--- org.jetbrains.kotlin:kotlin-runtime:1.0.6
+
+BUILD SUCCESSFUL
+
+Total time: 4.947 secs
