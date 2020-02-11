@@ -1,10 +1,25 @@
 package com.ilazarev.kotlin.quickstart
 
-class Person(val name: String, val married: Boolean)
+//class Person(val name: String, val married: Boolean)
+class Person {
+    var name: String = ""
+    var age: Int = 28
+    var married: Boolean = false
+
+    constructor(name: String, age: Int, married: Boolean) {
+        this.name = name
+        this.age = age
+        this.married = married
+    }
+
+    fun isOlder(person2: Person): Boolean {
+        return person2.age > this.age
+    }
+}
 
 fun main(args: Array<String>) {
-    show(Person("Igor", true))
-    show(Person("John", false))
+    show(Person("Igor", 51, true))
+    show(Person("John", 40, false))
 }
 
 private fun show(person: Person) {
