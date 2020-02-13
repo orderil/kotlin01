@@ -12,8 +12,8 @@ class Person {
         this.married = married
     }
 
-    fun isOlder(person2: Person): Boolean {
-        return person2.age > this.age
+    fun olderThan(anotherPerson: Person): Boolean {
+        return this.age > anotherPerson.age
     }
 }
 

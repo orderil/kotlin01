@@ -10,12 +10,12 @@ class PersonTest {
 
     @Test
     fun someTest1() {
-        assertFalse(Person("Igor", 51, true).isOlder(Person("John", 40, false)))
+        assertTrue(Person("Igor", 51, true).olderThan(Person("John", 40, false)))
     }
 
     @Test
     fun someTest2() {
-        assertTrue(Person("John", 40, false).isOlder(Person("Igor", 51, true)))
+        assertFalse(Person("John", 40, false).olderThan(Person("Igor", 51, true)))
     }
 
 }
